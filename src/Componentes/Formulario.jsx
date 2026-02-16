@@ -8,9 +8,6 @@ const Formulario = ({ agregar }) => {
   const enviarFormulario = (e) => {
     e.preventDefault(); 
 
-
-    // Si la función se ejecuta, es porque el navegador ya validó que hay datos.
-
     const nuevoContacto = {
       id: Date.now(),
       nombre,
@@ -21,7 +18,7 @@ const Formulario = ({ agregar }) => {
 
     agregar(nuevoContacto);
 
-    
+
     setNombre('');
     setApellido('');
     setTelefono('');
@@ -39,6 +36,7 @@ const Formulario = ({ agregar }) => {
         required  
       />
 
+    
       <input 
         type="text" 
         placeholder="Apellido" 
@@ -47,8 +45,9 @@ const Formulario = ({ agregar }) => {
         required 
       />
 
+      
       <input 
-        type="tel"
+        type="tel" 
         placeholder="Teléfono" 
         value={telefono} 
         onChange={(e) => setTelefono(e.target.value)} 
@@ -60,4 +59,4 @@ const Formulario = ({ agregar }) => {
   );
 };
 
-export default Formulario;
+export default Formulario; 
