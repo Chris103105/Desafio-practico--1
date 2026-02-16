@@ -18,10 +18,6 @@ Aplicación web para la gestión de contactos desarrollada para la materia de Di
 * CSS3 (Grid y Flexbox)
 * Git & GitHub
 
-##  Proceso de instalacion Instalación
-1.  Clonar el repositorio " git remote add origin https://github.com/Chris103105/Desafio-practico--1.git "
-2.  Ejecutar `npm install`.
-3.  Ejecutar `npm run dev`.
 
 
 ##  Guía de Instalación y Ejecución
@@ -39,7 +35,7 @@ Asegúrate de tener instalado lo siguiente:
 Abre tu terminal y ejecuta el siguiente comando para descargar los archivos:
 ```bash
 # 1. Clonar el repositorio
-git clone [https://github.com/Chris103105/Desafio-practico--1.git](https://github.com/Chris103105/Desafio-practico--1.git)
+git clone https://github.com/Chris103105/Desafio-practico--1
 
 # 2. Entrar a la carpeta
 cd Desafio-practico--1
