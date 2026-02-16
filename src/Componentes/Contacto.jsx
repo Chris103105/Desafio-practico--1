@@ -1,12 +1,28 @@
 import React from 'react';
 
-const Contact = ({ datos }) => {
+const Contact = ({ datos, borrar, marcarFav }) => {
   return (
-    <div className="tarjeta-contacto">
-    
+    // Si es favorito, agregamos la clase 'es-favorito' para cambiar el fondo
+    <div className={`tarjeta-contacto ${datos.favorito ? 'es-favorito' : ''}`}>
+      
       <div>
+       
+        {datos.favorito && <span className="badge-fav">--Fav--</span>}
+        
         <h4>{datos.nombre} {datos.apellido}</h4>
-        <p>Tel: {datos.telefono}</p>
+        <p>{datos.telefono}</p>
+      </div>
+
+      
+      <div className="botones">
+        <button onClick={() => marcarFav(datos.id)}>
+          {datos.favorito ? 'Quitar Fav' : 'Favorito'}
+        </button>
+        
+        
+        <button onClick={() => borrar(datos.id)} style={{backgroundColor: '#ff4d4d', color: 'white'}}>
+          Eliminar
+        </button>
       </div>
     </div>
   );
