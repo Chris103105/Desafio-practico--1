@@ -1,7 +1,7 @@
 import React from 'react';
-import Contact from './Contacto';
+import Contact from './Contact';
 
-const ContactosLista = ({ listaContactos, borrar, marcarFav }) => {
+const ContactList = ({ listaContactos, borrar, marcarFav }) => {
   return (
     <div className="lista-contenedor">
       {listaContactos.map((contacto) => (
@@ -16,4 +16,4 @@ const ContactosLista = ({ listaContactos, borrar, marcarFav }) => {
   );
 };
 
-export default ContactosLista;
+export default ContactList;

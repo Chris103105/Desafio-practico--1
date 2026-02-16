@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
 import Formulario from './Componentes/Formulario';
-import ContactList from './Componentes/Contactolista';
+import ContactList from './Componentes/ContactList';
 import datosIniciales from './Datos/contactos.json';
 
 function App() {
   const [contactos, setContactos] = useState(datosIniciales);
 
-  
+ 
   const agregarContacto = (nuevo) => {
     setContactos([...contactos, nuevo]);
   };
@@ -31,7 +31,7 @@ function App() {
     if (a.favorito === b.favorito) return 0;
     return a.favorito ? -1 : 1;
   });
-  
+
 
   return (
     <div className="App">
@@ -40,13 +40,13 @@ function App() {
       </header>
 
       <main className="contenedor-principal">
-        {/* columna con el  Formulario */}
+ 
         <section className="columna columna-formulario">
           <h2>Nuevo Contacto</h2>
           <Formulario agregar={agregarContacto} />
         </section>
 
-        {/* columna con la Lista */}
+        
         <section className="columna columna-lista">
           <h2>Mis Contactos ({contactos.length})</h2>
           <div className="scroll-lista">
