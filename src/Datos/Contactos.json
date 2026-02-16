@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nombre": "Joquin", "apellido": "Flores", "telefono": "6978-1254", "favorito": true },
+  { "id": 2, "nombre": "Jose", "apellido": "Cruz", "telefono": "7589-1236", "favorito": false },
+  { "id": 3, "nombre": "Yancy", "apellido": "Bonilla", "telefono": "7757-7523", "favorito": false }
+]
