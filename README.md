@@ -39,7 +39,7 @@ Asegúrate de tener instalado lo siguiente:
 Abre tu terminal y ejecuta el siguiente comando para descargar los archivos:
 ```bash
 # 1. Clonar el repositorio
-git clone [https://github.com/Chris103105/Desafio-practico--1.git](https://github.com/Chris103105/Desafio-practico--1.git)
+git clone https://github.com/Chris103105/Desafio-practico--1
 
 # 2. Entrar a la carpeta
 cd Desafio-practico--1
